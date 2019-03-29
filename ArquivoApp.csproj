@@ -14,5 +14,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="ValorContexto.cs" />
+    <Compile Remove="ConsumeContexto.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="ConsumeContexto.xaml" />
   </ItemGroup>
 </Project>

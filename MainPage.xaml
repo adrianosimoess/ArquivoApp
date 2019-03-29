@@ -12,13 +12,29 @@
     
     <StackLayout>
         <Editor x:Name="editor_valor"
-                HeightRequest="200"
-                Margin="20, 20, 20, 0"/>
+                HeightRequest="100"
+                Margin="20, 20, 20, 20"
+                BackgroundColor="Teal"/>
         <Label Text="Texto inicial"
-               FontSize="60"
+               FontSize="30"
                HorizontalOptions="Center" 
-               VerticalOptions="CenterAndExpand" 
+               VerticalOptions="End" 
                x:Name="label_inicial"
                />
+        
+            <Button Text="Checar Lista"
+                    BackgroundColor="Teal"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="Handle_Clicked_1"/>
+           
+            <Button Text="Quebrar String"
+                    BackgroundColor="Silver"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="Handle_Clicked_2"/>
+                
+       
+        
     </StackLayout>
 </ContentPage>
