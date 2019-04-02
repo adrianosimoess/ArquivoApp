@@ -3,7 +3,8 @@ namespace ArquivoApp
 {
     public class Arquivo
     {
-        public string arquivos { get; set; }
+        public string Conteudo { get; set; }
+        public string DtCriacao { get; set; }
 
         public Arquivo()
         {

@@ -24,11 +24,14 @@ namespace ArquivoApp
 
             string nome = Path.GetRandomFileName() + ".txt";
             string nomeArquivo = Path.Combine(App.PastaDiretorio, $"{nome}");
-            File.Create(nomeArquivo);
+            string conteudoTexto = editor_valor.Text;
 
+            //File.Create(nomeArquivo);
+            File.WriteAllText(nomeArquivo, conteudoTexto);
             label_inicial.Text = "Adicionando...";
-            lista.Add(nomeArquivo);
+            lista.Add(conteudoTexto);
 
+            editor_valor.Text = string.Empty;
         }
 
         void Handle_Clicked_1(object sender, System.EventArgs e)
@@ -47,7 +50,7 @@ namespace ArquivoApp
         {
             InitializeComponent();
             label_inicial.Text = App.ValorContexto;
-
+            NavigationPage.SetHasBackButton(this, false);
         }
 
 
